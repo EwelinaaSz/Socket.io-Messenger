@@ -8,7 +8,7 @@ pipeline{
           steps {
               echo 'Testing'
               sh 'npm install'
-              sh 'npm run test_Failure'
+              sh 'npm run test'
           }
       }
   }
