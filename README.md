@@ -10,6 +10,8 @@ To get started:
   3. Open two windows on `localhost:3000`.
   4. Enjoy messaging yourself.
 
+Sprawdzenie poprawnosci cwiczenia
+
 ## Testing 
 run tests with either `mocha` or `npm test`
 
