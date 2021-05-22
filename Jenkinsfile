@@ -40,6 +40,25 @@ pipeline{
 				}
 			}
 		}
+		stage('Deploy') {
+			steps {
+				echo 'Deploy'
+				sh 'docker build -t deploy -f dockerfile_socket-deploy .'
+			}
+			post{
+
+				always{
+					echo 'Finished'
+				}
+				failure{
+					sendMessage('deploy', 'Failure')
+				}
+				success{
+					sendMessage('deploy', 'Success')
+				}
+			}
+		}
+		
 	}
 	
 }
