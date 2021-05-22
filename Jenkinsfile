@@ -25,7 +25,7 @@ pipeline{
 		stage('Test') {
 			steps {
 				echo 'Testing'
-				sh 'npm run test_Failure'
+				sh 'npm run test'
 			}
 			post{
 
